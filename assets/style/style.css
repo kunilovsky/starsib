@@ -1,4 +1,55 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.header__top {
+  background-color: #F7931E;
+}
+
+.header__top__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.header__top__link:hover {
+  color: #ffffff;
+}
+
+.header__main {
+  -webkit-box-shadow: 0px 1px 1px #E2E2E2;
+          box-shadow: 0px 1px 1px #E2E2E2;
+}
+
+.nav-link {
+  font-size: 20px;
+}
+
+.navbar-brand img {
+  width: 110px;
+}
+
+@media (min-width: 768px) {
+  .header__top-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .navbar-brand img {
+    width: 86px;
+  }
+  .header {
+    position: relative;
+  }
+  .header__top {
+    display: none;
+  }
+  .header__top-mobile {
+    display: block;
+    position: absolute;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
