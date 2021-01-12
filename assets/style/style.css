@@ -2,6 +2,26 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  color: #20335B !important;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #20335B !important;
+  letter-spacing: 0.028em;
+}
+
+h5 {
+  color: #b6b6b6 !important;
+  font-weight: 300;
+}
+
+h6 {
+  color: #fff;
+  font-weight: 400;
+}
+
 .header__top {
   background-color: #F7931E;
 }
@@ -17,6 +37,7 @@ body {
 }
 
 .header__main {
+  z-index: 3;
   -webkit-box-shadow: 0px 1px 1px #E2E2E2;
           box-shadow: 0px 1px 1px #E2E2E2;
 }
@@ -26,7 +47,7 @@ body {
 }
 
 .navbar-brand img {
-  width: 110px;
+  height: 70px;
 }
 
 .carousel-caption {
@@ -46,6 +67,166 @@ body {
   right: -10% !important;
 }
 
+hr {
+  color: #F7931E;
+  height: 2px !important;
+  opacity: 1 !important;
+}
+
+.section {
+  padding-top: 100px;
+  background-color: #fff;
+}
+
+/** Card **/
+.catalog__link {
+  text-decoration: none;
+  color: #20335B;
+}
+
+.catalog__link:hover {
+  color: #20335B;
+}
+
+.card {
+  position: relative;
+  border: 1px solid #F9F9F9;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  height: 220px;
+  background-color: #F4F4F4;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.005);
+          transform: scale(1.005);
+}
+
+.card__title {
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.card__list {
+  list-style: none;
+  font-size: 14px;
+}
+
+.card__1 {
+  background: url(/assets/img/card1.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.card__2 {
+  background: url(/assets/img/card2.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.card__3 {
+  background: url(/assets/img/card3.jpg);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.card__4 {
+  background: url(/assets/img/card4.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.arrows {
+  font-size: 10px;
+  color: #F7931E;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: auto;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+/** About **/
+.about__logo {
+  width: 300px;
+}
+
+.about__number {
+  font-size: 100px;
+  font-weight: 400;
+  color: #F7931E;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.about__number__year {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.about__contact {
+  font-size: 14px;
+  height: 60px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__contact img {
+  width: 40px;
+}
+
+.about__link {
+  font-size: 15px;
+  text-decoration: none;
+  color: #20335B;
+}
+
+.about__link:hover {
+  color: #20335B;
+}
+
+.footer {
+  background-color: #20335B;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__law {
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.footer__link:hover {
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .header__top-mobile {
     display: none;
@@ -53,6 +234,9 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 425px) {
+  h5 {
+    font-size: 16px;
+  }
   .navbar-brand img {
     width: 86px;
   }
@@ -88,6 +272,24 @@ body {
     left: 0 !important;
     padding: 20px 30px;
     background: linear-gradient(93.59deg, #FFFFFF 2.75%, #FFFFFF 2.76%, rgba(255, 255, 255, 0) 111.44%);
+  }
+  .card {
+    height: 200px;
+  }
+  .card__list {
+    font-size: 12px;
+  }
+  .about__contact {
+    margin-top: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about__contact img {
+    padding-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
