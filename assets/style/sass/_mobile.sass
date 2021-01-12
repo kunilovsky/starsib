@@ -7,22 +7,17 @@
     .navbar-brand img
         width: 86px
     .header
-        position: relative            
+        position: relative
+        &__main
+            border-radius: 0 0 30px 30px
+            margin-bottom: 5px            
         &__top
             display: none
+            &__link
+                color: $top-header
         &__top-mobile
-            transition: .2s
-            z-index: 3
             display: block
-            position: absolute
-            margin-left: -12px
-            margin-right: -12px
-            animation-iteration-count: 1;
-            animation-duration: .5s
-            animation-name: hovblock
-        @keyframes hovblock
-            0% { opacity: .1; }
-            100% { opacity: 1; }
+            background-color: #fff
         
     .carousel-control-prev
         display: none

@@ -59,39 +59,19 @@ body {
   .header {
     position: relative;
   }
+  .header__main {
+    border-radius: 0 0 30px 30px;
+    margin-bottom: 5px;
+  }
   .header__top {
     display: none;
   }
+  .header__top__link {
+    color: #F7931E;
+  }
   .header__top-mobile {
-    -webkit-transition: .2s;
-    transition: .2s;
-    z-index: 3;
     display: block;
-    position: absolute;
-    margin-left: -12px;
-    margin-right: -12px;
-    -webkit-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    -webkit-animation-name: hovblock;
-            animation-name: hovblock;
-  }
-  @-webkit-keyframes hovblock {
-    0% {
-      opacity: .1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes hovblock {
-    0% {
-      opacity: .1;
-    }
-    100% {
-      opacity: 1;
-    }
+    background-color: #fff;
   }
   .carousel-control-prev {
     display: none;
